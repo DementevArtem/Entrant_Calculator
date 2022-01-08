@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+article {
+  border-bottom: 1px solid black;
+}
+
+.content {
+  width: 1321px;
+  margin: 15px auto;
+  display: block;
+
+  border: 1px solid black;
+  background: grey;
+}
+
+.labelSpec {
+  display: block;
+  margin: 15px 0px 15px 15px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.buttonRating input {
+  width: 260px;
+  display: block;
+  margin-left: 15px;
+
+  font-size: 18px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1020px;
+
+  border-top: 1px solid black;
+}
+
+.up-bar {
+  margin: 15px;
+  text-align: center;
+}
+
+.block-ZNO {
+  background: burlywood;
+}
+
+.block-ZNO h3 {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+
+  border-bottom: 1px solid black;
+}
+
+.block-Speciality {
+  background: wheat;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.block-searchButton {
+  margin-top: 15px;
+
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.searchButtonSpeciality {
+  padding: 10px;
+  margin: 15px;
+
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.block-Speciality h3 {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+
+  border-bottom: 1px solid black;
+}
+
+#section span {
+  display: block;
+  padding: 1% 0% 1% 2%;
+  font-size: 20px;
+}
+
+#section p {
+  display: block;
+  padding: 0% 0% 1% 10%;
+  font-size: 14px;
+}

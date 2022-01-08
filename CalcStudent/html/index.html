@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Entrant calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="up-bar">
+            <h2>Калькулятор для розрахунку спеціальностей відповідно конкурсного балу</h2>
+        </div>
+        <div class="wrapper">
+            <div class="block-ZNO">
+                <h3>Оберіть сертифікати ЗНО:</h3>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input type = "checkbox" 
+                                name="checkboxSpec"
+                                value="Українська мова і література"
+                                onclick="EnableDisableTextBox(this, 'UkrainianLanguageAndLiterature')"/>
+                        <label for = "UkrainianLanguageAndLiterature"> Українська мова і література: </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="UkrainianLanguageAndLiterature">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input type = "checkbox"
+                                name="checkboxSpec"  
+                                value="Українська мова"
+                                onclick="EnableDisableTextBox(this, 'UkrainianLanguage')"/>
+                        <label for = "UkrainianLanguage"> Українська мова: </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="UkrainianLanguage">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Математика"
+                                onclick="EnableDisableTextBox(this, 'Math')"/>
+                        <label for="Math"> Математика: </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="Math">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Фізика"
+                                onclick="EnableDisableTextBox(this, 'Physics')">
+                        <label for="Physics"> Фізика: </label>    
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="Physics">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Історія України"
+                                onclick="EnableDisableTextBox(this, 'HistoryOfUkraine')">
+                        <label for="HistoryOfUkraine"> Історія України: </label>   
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="HistoryOfUkraine">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Іноземна мова"
+                                onclick="EnableDisableTextBox(this, 'ForeignLanguage')">
+                        <label for="ForeignLanguage"> Іноземна мова: </label>  
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="ForeignLanguage">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Географія"
+                                onclick="EnableDisableTextBox(this, 'Geography')">
+                        <label for="Geography"> Географія: </label> 
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="Geography">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Біологія"
+                                onclick="EnableDisableTextBox(this, 'Biologia')">
+                        <label for="Biologia"> Біологія: </label> 
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="Biologia">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Хімія"
+                                onclick="EnableDisableTextBox(this, 'Chemistry')">
+                        <label for="Chemistry"> Хімія: </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="Chemistry">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                value="Творчий конкурс"
+                                onclick="EnableDisableTextBox(this, 'TK')">
+                        <label for="TK"> Творчий конкурс: </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" disabled name="" id="TK">
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="checkbox" 
+                                name="checkboxSpec" 
+                                checked
+                                disabled
+                                onclick="EnableDisableTextBox(this, 'certificateOfSchool')">
+                        <label for="certificateOfSchool">
+                            Бал атестату за 12-ти бальною <br> шкалою: 
+                        </label>
+                    </div>
+                    <div class = "buttonRating">
+                        <input type="text" name="" id="certificateOfSchool">
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="radio" 
+                                name="checkboxSpec" 
+                                id="regionCoef"
+                                checked>
+                        <label for="vallageCoef">
+                            Регіональний коефіцієнт: 
+                        </label>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class = "labelSpec">
+                        <input  type="radio" 
+                                name="checkboxSpec" 
+                                id="vallageCoef">
+                        <label for="vallageCoef">
+                            Сільський коефіцієнт: 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="block-searchButton">
+                    <button onclick="onClickButton()" class="searchButtonSpeciality">Знайти спеціальності</button>
+                </div>
+
+            </div>
+            <div class="block-Speciality">
+                <h3>Спеціальності та спеціалізації відповідні до ваших ЗНО:</h3>
+                <section id="section"></section>
+            </div>
+        </div>
+    </div>
+    <script src="../js/checked.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
