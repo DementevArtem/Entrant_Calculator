@@ -2,4 +2,4 @@
 This project is designed so that the entrant can find a relevant specialty at the university
 
 # HOW IT'S WORKING?
-![DBschema](/screenshots/MAIN_PHOTO.png)
+![DBschema](/screenshots/MAIN_PHOTO.jpg)
